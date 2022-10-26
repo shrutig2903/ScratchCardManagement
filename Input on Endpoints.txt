@@ -1,0 +1,15 @@
+1: GetUnusedScratchCards gives all the unused scratch cards which can be used for screen to display the scratch cards which are to be assigned to user.
+
+2. Separet API to assgin scratch cards to Users. Currently it is done in addTransactions api
+
+3. Pagination API to display all the transactions. Pagination filters are implemented, API is remaining
+
+4. to inactive an user and check while assigning the acratch card wheather the user is Active or not,
+
+5. Exception Handling for all the senerios
+
+6. Login page for the entire application and implementing the login module
+
+7. implementing the JWT tokens for authorization
+
+8. check if the user assigning the transaction is valid or not.
