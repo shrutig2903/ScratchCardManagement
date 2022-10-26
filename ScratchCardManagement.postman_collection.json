@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "586569f4-a64a-4147-820f-29518a9fdb03",
+		"name": "ScratchCardManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5579087"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Scratch Card Details",
+					"item": [
+						{
+							"name": "/api/ScratchCardDetails/GetUnusedScratchCards",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/ScratchCardDetails/GetUnusedScratchCards",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ScratchCardDetails",
+										"GetUnusedScratchCards"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/ScratchCardDetails/GetUnusedScratchCards",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ScratchCardDetails",
+												"GetUnusedScratchCards"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/ScratchCardDetails/GenerateScratchCards",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/ScratchCardDetails/GenerateScratchCards?N=-55010275",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ScratchCardDetails",
+										"GenerateScratchCards"
+									],
+									"query": [
+										{
+											"key": "N",
+											"value": "-55010275"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/ScratchCardDetails/GenerateScratchCards?N=-55010275",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ScratchCardDetails",
+												"GenerateScratchCards"
+											],
+											"query": [
+												{
+													"key": "N",
+													"value": "-55010275"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "/api/User/AddUser",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"userId\": \"urn:uuid:a0bca3ee-fef3-6df1-3dd1-30d3242a2b91\",\n  \"email\": \"sit\",\n  \"firstName\": \"Du\",\n  \"lastName\": \"consectetur veniam magna aliqua\",\n  \"isActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/User/AddUser",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"User",
+										"AddUser"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"userId\": \"urn:uuid:a0bca3ee-fef3-6df1-3dd1-30d3242a2b91\",\n  \"email\": \"sit\",\n  \"firstName\": \"Du\",\n  \"lastName\": \"consectetur veniam magna aliqua\",\n  \"isActive\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/User/AddUser",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"User",
+												"AddUser"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/User/GetAllUsers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/User/GetAllUsers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"User",
+										"GetAllUsers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/User/GetAllUsers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"User",
+												"GetAllUsers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/api/Transaction/AddTransactions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"userId\": \"85580e6a-10a6-1875-3be1-ac219536341a\",\n    \"scratchCardId\": \"aa829b75-5d30-7630-e70f-a40bec4b09d2\",\n    \"scratchCardAmount\": 48457758.62840065\n  },\n  {\n    \"userId\": \"urn:uuid:a5382e5b-6aec-e1a1-1292-a3e610e3208e\",\n    \"scratchCardId\": \"2da69c2f-8755-3237-f954-5dea7b7c04e5\",\n    \"scratchCardAmount\": -64939683.64608858\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Transaction/AddTransactions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Transaction",
+								"AddTransactions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"userId\": \"urn:uuid:23b15757-2df8-2404-11ee-9f46a7058ba9\",\n    \"scratchCardId\": \"c3ca0fa1-1b0e-444f-9b8a-a29de6fa6bbf\",\n    \"scratchCardAmount\": -8193284.459980443\n  },\n  {\n    \"userId\": \"urn:uuid:0681853d-7105-5a33-01da-10944231a44d\",\n    \"scratchCardId\": \"urn:uuid:810ee15e-4abe-45df-eee3-a2f08d446417\",\n    \"scratchCardAmount\": 68489191.58057436\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Transaction/AddTransactions",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Transaction",
+										"AddTransactions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get Weather Forecast",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/WeatherForecast",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"WeatherForecast"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/WeatherForecast",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"WeatherForecast"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n  {\n    \"date\": \"2016-02-28T17:47:31.078Z\",\n    \"temperatureC\": -7446838,\n    \"temperatureF\": -24272455,\n    \"summary\": \"adipisicing ullamco Ut\"\n  },\n  {\n    \"date\": \"1954-07-27T01:11:58.833Z\",\n    \"temperatureC\": 57106382,\n    \"temperatureF\": 95266743,\n    \"summary\": \"et quis\"\n  }\n]"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
