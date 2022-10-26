@@ -31,12 +31,17 @@ namespace ScratchCardManagement.Repository.Implementation
             try
             {
                 Transaction transaction = new Transaction();
+                ScratchCard chkCard = new ScratchCard();
 
                 foreach (var user in usv)
                 {
                     if (user.userId != null)
                     {
-                        ScratchCard chkCard = scratchCard.GetById(user.ScratchCardId);
+                        chkCard = scratchCard.GetById(user.ScratchCardId);
+                        if (chkCard != null)
+                        {
+                            chkCard.IsScratched=true;
+                        }
                         if ((chkCard.ExpiryDate.CompareTo(DateTime.Now)) < 0)
                         {
                             return false;
@@ -47,7 +52,7 @@ namespace ScratchCardManagement.Repository.Implementation
                             TransactionAmount = user.ScratchCardAmount,
                             TransactionDate = DateTime.Now,
                             User = userDetails.GetById(user.userId),
-                            ScratchCard = scratchCard.GetById(user.ScratchCardId)
+                            ScratchCard = chkCard
 
                         };
                         this.Add(transaction);

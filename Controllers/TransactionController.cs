@@ -36,7 +36,7 @@ namespace ScratchCardManagement.Controllers
             {
                 response.Data = result;
                 response.ResponseCode = HTTPConstants.OK;
-                response.ResponseMessage = MessageConstants.ScratchCardUsed;
+                response.ResponseMessage = MessageConstants.TransactionSuccessFull;
             }
             return Ok(response);
             

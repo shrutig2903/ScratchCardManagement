@@ -27,7 +27,7 @@ namespace ScratchCardManagement.Repository.Implementation
             {
                 List<ScratchCardViewModel> scv = new List<ScratchCardViewModel>();
                 
-                var model = this.GetAllByCondition(x => x.IsActive == true && x.IsScratched == true).ToList();
+                var model = this.GetAllByCondition(x => x.IsActive == true && x.IsScratched == false).ToList();
 
                 if(model != null)
                     return model;
